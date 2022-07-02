@@ -5,6 +5,10 @@
 
 #include <fvwm/fvwmlib.h>
 #include "ButtonArray.h"
+#include "FvwmTaskBar.h"
+#include "Mallocs.h"
+
+void ButtonDraw(Button *button, int x, int y, int w, int h);
 
 extern Display *dpy;
 extern Window Root, win;

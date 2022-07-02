@@ -15,7 +15,9 @@
 #include <FVWMconfig.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "List.h"
+#include "FvwmTaskBar.h"
 #include "Mallocs.h"
 #include "../../fvwm/module.h"
 

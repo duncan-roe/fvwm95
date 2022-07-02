@@ -21,6 +21,7 @@
 #include "GoodyLoadable.h"
 #include "Mallocs.h"
 #include "Colors.h"
+#include "FvwmTaskBar.h"
 
 
 int RenewGoodies = 0;
@@ -37,7 +38,8 @@ GC statusgc, dategc;
 XFontStruct *StatusFont;
 int stwin_width = 100, old_stwin_width = 100, goodies_width = 0;
 int anymail, unreadmail, newmail, mailcleared = 0;
-int fontheight, clock_width;
+extern int fontheight;
+int clock_width;
 int BellVolume = DEFAULT_BELL_VOLUME;
 Pixmap mailpix, wmailpix, pmask, pclip, speakerpix, speakeroffpix,s_mask;
 XpmAttributes s_attr;

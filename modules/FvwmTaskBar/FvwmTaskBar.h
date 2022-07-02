@@ -18,6 +18,7 @@
  * own risk. Permission to use this program for any purpose is given,
  * as long as the copyright is kept intact. */
 
+#include <X11/Xmd.h>
 #include <fvwm/fvwmlib.h>
 #include "../../fvwm/fvwm.h"
 

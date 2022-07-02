@@ -11,6 +11,7 @@
 #include <fvwm/fvwmlib.h>
 
 #include "GoodyLoadable.h"
+#include "FvwmTaskBar.h"
 
 /*
  * Be careful to avoid name collisions.

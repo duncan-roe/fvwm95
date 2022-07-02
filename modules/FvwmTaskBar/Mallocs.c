@@ -25,6 +25,8 @@
 #include <string.h>
 #include <sys/time.h>
 
+#include "Mallocs.h"
+
 #ifdef BROKEN_SUN_HEADERS
 #include "../../fvwm/sun_headers.h"
 #endif

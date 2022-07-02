@@ -15,19 +15,21 @@
  */
 
 #include <stdlib.h>
+#include <string.h>
 #include <stdio.h>
 #include <X11/Xlib.h>
 
 #include <fvwm/fvwmlib.h>
 
 #include "ButtonArray.h"
+#include "FvwmTaskBar.h"
 #include "Mallocs.h"
 
 extern XFontStruct *ButtonFont, *SelButtonFont;
 extern Display *dpy;
 extern Window win;
 extern GC shadow, hilite, graph, whitegc, blackgc, checkered;
-extern button_width;
+extern int button_width;
 
 extern Button *StartButton;
 

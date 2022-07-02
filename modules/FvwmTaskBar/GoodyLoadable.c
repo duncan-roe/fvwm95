@@ -2,6 +2,7 @@
 #include <dlfcn.h>
 #include <dirent.h>
 #include <string.h>
+#include <stdlib.h>
 
 #include <fvwm/fvwmlib.h>
 #include "GoodyLoadable.h"

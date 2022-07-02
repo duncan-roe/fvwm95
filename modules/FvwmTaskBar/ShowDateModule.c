@@ -18,6 +18,8 @@
 
 #include "Goodies.h"
 #include "GoodyLoadable.h"
+#include "Mallocs.h"
+#include "FvwmTaskBar.h"
 
 
 struct DateInfo {

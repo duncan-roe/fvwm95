@@ -14,6 +14,8 @@
 
 #include <fvwm/fvwmlib.h>
 #include "GoodyLoadable.h"
+#include "FvwmTaskBar.h"
+#include "Mallocs.h"
 
 /* Be careful to avoid name collisions.
  * It's best to name all symbols used for external reference as
@@ -100,6 +102,8 @@ static int DoAutoMailTip(struct MyInfo *mif, int fForce);
 
 void MailCheckModule_getstatus(struct MyInfo *);
 
+void CheckAndShowTipWindow(int tip_type);
+void CheckAndDestroyTipWindow(int tip_type);
 
 void *MailCheckModuleInit(char *id, int);
 int MailCheckModuleParseResource(struct MyInfo *mif,char *tline,char *MailCheckModule,int Clength);

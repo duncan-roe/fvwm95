@@ -1,10 +1,12 @@
 #include <stdio.h>
 #include <fcntl.h>
+#include <ctype.h>
 #include <stdlib.h>
 #include <string.h>
 #include <sys/types.h>
 #include <time.h>
 #include <sys/stat.h>
+#include <unistd.h>
 
 #include <X11/X.h>
 #include <X11/xpm.h>
@@ -173,7 +175,7 @@ static int  ReadBatteryInfo(BatStatInfo_t *mif) {
 
         char Buffer[100];
 
-	if (mif == NULL) return;
+	if (mif == NULL) return 0;
 	if (mif->fd == -1) {
 	  mif->fd = open( PROCAPMFILE, O_RDONLY );
 	} else {
