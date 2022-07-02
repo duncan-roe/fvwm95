@@ -182,8 +182,6 @@ extern void DrawIconWindow(FvwmWindow *);
 extern void CreateIconWindow(FvwmWindow * tmp_win, int def_x, int def_y);
 
 
-extern inline void RelieveWindow(FvwmWindow *, Window,
-				 int, int, int, int, GC, GC, int);
 void RelieveButton(FvwmWindow *, Window, int, int, int, int, GC, GC, int);
 
 /*void RelieveParts(FvwmWindow *t,int i,GC hor, GC vert);*/
@@ -322,7 +320,6 @@ void ButtonStyle(XEvent * eventp, Window w, FvwmWindow * tmp_win,
 		 unsigned long context, char *action, int *Module);
 void SetColormapFocus(XEvent * eventp, Window w, FvwmWindow * tmp_win,
 		      unsigned long context, char *action, int *Module);
-inline void DrawPattern(Window, GC, GC, int, int, int);
 Pixel GetShadow(Pixel);
 Pixel GetHilite(Pixel);
 

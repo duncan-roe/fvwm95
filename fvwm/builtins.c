@@ -26,6 +26,8 @@ static char *exec_shell_name = "/bin/sh";
 
 #include <X11/xpm.h>
 
+void KillModuleByName(char *name);
+
 /***********************************************************************
  *
  *  Procedure:
@@ -1591,7 +1593,7 @@ FvwmWindow *Circulate(char *action, int Direction, char **restofline)
   l = 0;
 
   if (action == NULL)
-    return;
+    return NULL;
 
   t = action;
   while (isspace(*t) && (*t != 0))
@@ -1606,7 +1608,7 @@ FvwmWindow *Circulate(char *action, int Direction, char **restofline)
     }
     if (*t == 0) {
       fvwm_msg(ERR, "Circulate", "Conditionals require closing brace");
-      return;
+      return NULL;
     }
 
     *restofline = t + 1;

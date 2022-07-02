@@ -69,6 +69,8 @@ static XrmOptionDescRec table[] = {
   { "-xrm",       NULL,    XrmoptionResArg, (caddr_t) NULL },
 };
 
+void GetOlHints(FvwmWindow *t);
+
 extern char *IconPath, *PixmapPath;
 
 /***********************************************************************
