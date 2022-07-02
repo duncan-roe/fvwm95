@@ -49,3 +49,6 @@ void DrawButtonArray(ButtonArray *array, int all);
 void SwitchButton(ButtonArray *array,int butnum);
 int WhichButton(ButtonArray *array,int x, int y);
 void PrintButtons(ButtonArray *array);
+int UpdateButtonDesk(ButtonArray *array, int butnum, long desk);
+long ItemDesk(List *list, long id);
+void RadioButton(ButtonArray *array, int butnum);

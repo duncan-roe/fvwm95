@@ -76,8 +76,8 @@
 #include "../../fvwm/module.h"
 #include <fvwm/version.h>
 #include "FvwmWinList.h"
-#include "ButtonArray.h"
 #include "List.h"
+#include "ButtonArray.h"
 #include "Colors.h"
 #include "Mallocs.h"
 
@@ -262,7 +262,7 @@ void ProcessMessage(unsigned long type,unsigned long *body)
   int redraw=0,i;
   long flags;
   char *name,*string;
-  static current_focus=-1;
+  static int current_focus=-1;
 
   Picture p;
 

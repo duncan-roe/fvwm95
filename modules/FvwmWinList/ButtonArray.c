@@ -13,13 +13,16 @@
  */
 
 #include <stdlib.h>
+#include <string.h>
 #include <stdio.h>
 #include <X11/Xlib.h>
 
 #include <fvwm/fvwmlib.h>
 
+#include "List.h"
 #include "ButtonArray.h"
 #include "Mallocs.h"
+#include "FvwmWinList.h"
 
 #ifndef min
 #define min(a,b) (((a)<(b)) ? (a) : (b))

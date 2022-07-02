@@ -1,4 +1,5 @@
 #include <fvwm/fvwmlib.h>
+#include <X11/Xmd.h>
 
 /* FvwmWinList Module for Fvwm. 
  *

@@ -18,6 +18,7 @@
 #include "List.h"
 #include "Mallocs.h"
 #include "../../fvwm/module.h"
+#include "FvwmWinList.h"
 
 
 #ifdef BROKEN_SUN_HEADERS
