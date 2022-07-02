@@ -41,6 +41,8 @@ char **pipeName;
 unsigned long *PipeMask;
 struct queue_buff_struct **pipeQueue;
 
+void AddToModList(char *tline);
+
 inline int PositiveWrite(int module, unsigned long *ptr, int size);
 void DeleteQueueBuff(int module);
 void AddToQueue(int module, unsigned long *ptr, int size, int done);
@@ -255,7 +257,7 @@ void HandleModuleInput(Window w, int channel)
 
   if (size > 255) {
     fvwm_msg(ERR, "HandleModuleInput",
-	     "Module command is too big (%d)", (void *) size);
+	     "Module command is too big (%d)", size);
     size = 255;
   }
 

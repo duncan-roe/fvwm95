@@ -182,6 +182,8 @@ extern void DrawIconWindow(FvwmWindow *);
 extern void CreateIconWindow(FvwmWindow * tmp_win, int def_x, int def_y);
 
 
+void RelieveWindow(FvwmWindow *, Window,
+				 int, int, int, int, GC, GC, int);
 void RelieveButton(FvwmWindow *, Window, int, int, int, int, GC, GC, int);
 
 /*void RelieveParts(FvwmWindow *t,int i,GC hor, GC vert);*/

@@ -106,6 +106,8 @@ int     ShapeEventBase, ShapeErrorBase;
 Boolean ShapesSupported = False;
 #endif
 
+void SetupButtons(void);
+
 long isIconicState = 0;
 extern XEvent Event;
 Bool Restarting = False;
@@ -1071,7 +1073,7 @@ void UnBlackoutScreen()
   }
 }
 
-SetupButtons()
+void SetupButtons()
 {
   XWindowAttributes root_attr;
   XpmAttributes xpm_attributes;

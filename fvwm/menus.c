@@ -48,6 +48,7 @@ void DrawUnderline(Window w, GC gc, int x, int y, char *txt, int off);
 int UpdateMenu(int sticks);
 int mouse_moved = 0;
 int menu_aborted = 0;
+int ButtonPosition(int context, FvwmWindow *t);
 
 int PrevActiveMenuX = -1;
 

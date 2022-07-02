@@ -35,10 +35,6 @@ void DrawLinePattern(Window win,
 		     int num_coords,
 		     int *x_coord, int *y_coord, int *line_style, int th);
 
-inline void RelieveWindow(FvwmWindow *t, Window win,
-			  int x, int y, int w, int h,
-			  GC ReliefGC, GC ShadowGC, int hilite);
-
 /* macro to change window background color/pixmap */
 #define ChangeWindowColor(window,color) {\
         if (NewColor)\
