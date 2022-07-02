@@ -1,4 +1,5 @@
 #include <FVWMconfig.h>
+#include <string.h>
 
 #if HAVE_UNAME
 /* define mygethostname() by using uname() */

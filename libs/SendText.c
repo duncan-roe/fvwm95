@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <ctype.h>
+#include <unistd.h>
+#include <string.h>
 /************************************************************************
  *
  * Sends arbitrary text to fvwm
