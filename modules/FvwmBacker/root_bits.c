@@ -39,6 +39,7 @@
 #include <X11/Xatom.h>
 #include <stdio.h>
 #include "X11/bitmaps/gray"
+#include <stdlib.h>
 
 char *index();
 
