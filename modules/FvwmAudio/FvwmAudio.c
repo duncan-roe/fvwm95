@@ -57,6 +57,7 @@
 /*
  * fvwm includes:
  */
+#include <time.h>
 #include <stdio.h>
 #include <signal.h>
 #include <fcntl.h>
@@ -142,7 +143,7 @@ char	*sound_table[MAX_MESSAGES+MAX_BUILTIN];
 RPLAY	*rplay_table[MAX_MESSAGES+MAX_BUILTIN];
 #endif
 
-main(int argc, char **argv)
+int main(int argc, char **argv)
 {
 	char *temp, *s;
 
