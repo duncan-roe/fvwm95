@@ -1,8 +1,8 @@
 
 SHELL=/bin/sh
 
-prefix=@prefix@
-icon_dir=@prefix@/lib/X11/icons
+prefix=${DESTDIR}/@prefix@
+icon_dir=${DESTDIR}/@libdir@/X11/icons
 
 INSTALL = @INSTALL@
 INSTALL_DATA = @INSTALL_DATA@

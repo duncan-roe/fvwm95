@@ -5,7 +5,7 @@ SHELL=/bin/sh
 
 top_srcdir=@top_srcdir@
 srcdir=@srcdir@
-prefix=@prefix@
+prefix=${DESTDIR}/@prefix@
 exec_prefix=@exec_prefix@
 bin_dir=@exec_prefix@/bin
 x_includes=@x_includes@
@@ -15,8 +15,8 @@ fvwm_rc=@fvwm_rc@
 fvwm_name=@fvwm_name@
 #
 # This is where the modules will be installed
-fvwm_dir=@prefix@/lib/X11/@fvwm_name@
-man_dir=@prefix@/man/man1
+fvwm_dir=${DESTDIR}/@libdir@/X11/@fvwm_name@
+man_dir=${DESTDIR}/@prefix@/man/man1
 
 #
 # Libs

@@ -1,8 +1,8 @@
 
 SHELL=/bin/sh
 
-prefix=@prefix@
-pixmaps_dir=@prefix@/lib/X11/pixmaps
+prefix=${DESTDIR}/@prefix@
+pixmaps_dir=${DESTDIR}/@libdir@/X11/pixmaps
 
 INSTALL = @INSTALL@
 INSTALL_DATA = @INSTALL_DATA@

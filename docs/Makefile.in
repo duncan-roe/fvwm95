@@ -1,9 +1,9 @@
 
 SHELL=/bin/sh
 
-prefix=@prefix@
-indexdir=@prefix@/lib/X11/fvwm95
-htmldir=@prefix@/lib/X11/fvwm95/html
+prefix=${DESTDIR}/@prefix@
+indexdir=${DESTDIR}/@libdir@/X11/fvwm95
+htmldir=${DESTDIR}/@libdir@/X11/fvwm95/html
 
 INSTALL = @INSTALL@
 INSTALL_DATA = @INSTALL_DATA@

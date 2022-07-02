@@ -113,9 +113,9 @@ DeskTopSize 2x2
 # These paths are colon-separated lists, just like regular unix PATH
 #=============================================================================#
 
-ModulePath @prefix@/lib/X11/fvwm95/
-PixmapPath @prefix@/lib/X11/pixmaps/
-IconPath   @prefix@/lib/X11/mini-icons/
+ModulePath @libdir@/X11/fvwm95/
+PixmapPath @libdir@/X11/pixmaps/
+IconPath   @libdir@/X11/mini-icons/
 
 #=============================================================================#
 # Set the decoration styles and window options
@@ -572,7 +572,7 @@ AddToMenu "Module-Popup" \
 DestroyMenu "Documents"
 AddToMenu "Documents" \
   "FVWM95%mini.win95.xpm%"		Exec netscape \
-					@prefix@/lib/X11/fvwm95/index.html
+					@libdir@/X11/fvwm95/index.html
 
 
 #------------------------------------------------------------------------------
@@ -1147,7 +1147,7 @@ Style "MiniButtons"  NoTitle,NoHandles,Sticky,StaysOnTop,WindowListSkip\
 #------------------ FvwmScript
 #------------------------------------------------------------------------------
 
-*FvwmScriptPath @prefix@/lib/X11/fvwm95/scripts
+*FvwmScriptPath @libdir@/X11/fvwm95/scripts
 
        
 #-------------------------------------------------------------------------------
@@ -1181,7 +1181,7 @@ Style "FvwmTaskBar" NoTitle,BorderWidth 4,HandleWidth 4,Sticky, \
 
 # Now the goodies....
 
-*FvwmTaskBarGoodyLoadablePlugins @prefix@/lib/X11/fvwm95/plugins
+*FvwmTaskBarGoodyLoadablePlugins @libdir@/X11/fvwm95/plugins
 *FvwmTaskBarGoodyLoadableQuiet
 
 # Modem
@@ -1231,7 +1231,7 @@ Style "FvwmTaskBar" NoTitle,BorderWidth 4,HandleWidth 4,Sticky, \
 # Battery Status
 #*FvwmTaskBarGoodyLoadableSymbol BatStatModuleSymbol
 #*FvwmTaskBarGoodyLoadableId BatStat
-#*FvwmTaskBarModuleIconPathBatStat @prefix@/lib/X11/mini-icons/
+#*FvwmTaskBarModuleIconPathBatStat @libdir@/X11/mini-icons/
 
 #------------------------------------------------------------------------------
 #------------------ FvwmWinList

@@ -1,8 +1,8 @@
 
 SHELL=/bin/sh
 
-prefix=@prefix@
-fvwm_dir=@prefix@/lib/X11/@fvwm_name@
+prefix=${DESTDIR}/@prefix@
+fvwm_dir=${DESTDIR}/@libdir@/X11/@fvwm_name@
 
 
 INSTALL = @INSTALL@

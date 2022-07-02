@@ -3,13 +3,13 @@ SHELL=/bin/sh
 
 @SET_MAKE@
 
-prefix=@prefix@
+prefix=${DESTDIR}/@prefix@
 exec_prefix=@exec_prefix@
 subdirs=FvwmAudio FvwmAuto FvwmBacker FvwmBanner FvwmButtons FvwmConsole \
 	FvwmCpp FvwmDebug FvwmForm FvwmIconBox FvwmIconMan FvwmIdent FvwmM4 \
 	FvwmPager FvwmSave FvwmSaveDesk FvwmScript FvwmScroll FvwmTalk \
 	FvwmTaskBar FvwmWinList FvwmWharf
-modules_dir=@prefix@/lib/X11/@fvwm_name@
+modules_dir=${DESTDIR}/@libdir@/X11/@fvwm_name@
 
 all:
 	@for i in ${subdirs}; do \
