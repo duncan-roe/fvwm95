@@ -11,6 +11,7 @@
 #include <stdio.h>
 #include <signal.h>
 #include <string.h>
+#include <stdlib.h>
 #include <X11/Xos.h>
 #include <X11/Xatom.h>
 #include <X11/xpm.h>
