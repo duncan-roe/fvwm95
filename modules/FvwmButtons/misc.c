@@ -153,7 +153,7 @@ void ConstrainSize (XSizeHints *hints, int *widthp, int *heightp)
   *widthp = dwidth;
   *heightp = dheight;
   return;
-#undef makemult(a,b)
+#undef makemult
 #undef maxAspectX
 #undef maxAspectY
 #undef minAspectX

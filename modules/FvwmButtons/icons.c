@@ -61,8 +61,8 @@ void CreateIconWindow(button_info *b)
 
   if(b->IconWin != None)
     {
-      fprintf(stderr,"%s: BUG: Iconwindow already created for 0x%06x!\n",
-	      MyName,(ushort)b);
+      fprintf(stderr,"%s: BUG: Iconwindow already created for %p!\n",
+	      MyName, b);
       exit(2);
     }
 
