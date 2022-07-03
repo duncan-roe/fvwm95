@@ -11,6 +11,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <unistd.h>
 #include <ctype.h>
 #include <X11/Xlib.h>
 #include <X11/X.h>
@@ -1531,7 +1532,7 @@ void MainLoop ()
     
 
 /* main procedure */
-main (int argc, char **argv)
+int main (int argc, char **argv)
 {
   FILE *fdopen();
   int i;
