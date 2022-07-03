@@ -143,7 +143,7 @@ void server (int *fd) {
   unlink( S_NAME ); 
   len = sizeof( sas.sun_family) + strlen( sas.sun_path );
 
-  if( bind(s, &sas,len) < 0 ) {
+  if( bind(s, (struct sockaddr *)&sas,len) < 0 ) {
 	ErrMsg( "bind" );
 	exit(1);
   }
@@ -157,7 +157,7 @@ void server (int *fd) {
 
   /* accept connections */
   clen = sizeof(csas);
-  if(( ns = accept(s, &csas, &clen)) < 0 ) {
+  if(( ns = accept(s, (struct sockaddr *)&csas, &clen)) < 0 ) {
 	ErrMsg( "accept");
 	exit(1);
   }
