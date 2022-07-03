@@ -46,6 +46,8 @@
 #include <X11/Xmu/SysUtil.h>
 #define Resolution(pixels, mm)  ((((pixels) * 100000 / (mm)) + 50) / 100)              
 
+int mygetostype(char *buf, int max);
+
 char *MyName;
 int fd[2];
 
