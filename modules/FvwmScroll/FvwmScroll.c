@@ -37,15 +37,15 @@
 #include "FvwmScroll.h"
 #include <fvwm/version.h>
 
-char *MyName;
-int fd_width;
+extern char *MyName;
+extern int fd_width;
 int fd[2];
 
-Display *dpy;			/* which display are we talking to */
-Window Root;
-int screen;
-int x_fd;
-int d_depth;
+extern Display *dpy;			/* which display are we talking to */
+extern Window Root;
+extern int screen;
+extern int x_fd;
+extern int d_depth;
 int ScreenWidth, ScreenHeight;
 
 char *BackColor = "black";
@@ -147,7 +147,7 @@ int main(int argc, char **argv)
     GetTargetWindow(&app_win);
 
   if(app_win == 0)
-    return;
+    return 0;
 
   fd_width = GetFdWidth();
 
