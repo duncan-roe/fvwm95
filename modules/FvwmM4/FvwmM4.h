@@ -35,6 +35,8 @@ void process_message(unsigned long type,unsigned long *body);
 void do_save(void);
 void list_new_page(unsigned long *body);
 
+extern int mygetostype(char *buf, int max);
+
 #ifdef BROKEN_SUN_HEADERS
 #include "../../fvwm/sun_headers.h"
 #endif
