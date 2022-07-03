@@ -1,4 +1,5 @@
 #include "types.h"
+#include "time.h"
 
 extern int fd[2];
 extern Window ref;

@@ -218,3 +218,6 @@ int MyAllocNamedColor(Display *display,Colormap colormap,char* colorname,XColor*
 void Quit (int NbArg,long *TabArg);
 
 void SendMsgToScript(XEvent event);
+
+int yyparse(void);
+int yylex(void);
