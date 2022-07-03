@@ -55,6 +55,9 @@
 #include "FvwmIconBox.h"
 #include <fvwm/version.h>
 
+inline void RelieveWindow(Window win,int x,int y,int w,int h,
+		   GC rgc,GC sgc);
+
 char *MyName;
 
 XFontStruct *font;
@@ -2711,7 +2714,7 @@ XErrorHandler myErrorHandler(Display *dpy, XErrorEvent *event)
   char msg[256];
 
   if (event->error_code == BadWindow)
-    return;
+    return NULL;
 
   XGetErrorText(dpy, event->error_code, msg, 256);
 
