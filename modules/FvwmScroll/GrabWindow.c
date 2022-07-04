@@ -38,10 +38,10 @@
 #include <X11/Intrinsic.h>
 
 #include "FvwmScroll.h"
-char *MyName;
+extern char *MyName;
 
-Display *dpy;			/* which display are we talking to */
-int x_fd,fd_width;
+extern Display *dpy;			/* which display are we talking to */
+extern int x_fd,fd_width;
 int Width = 300, Height = 300;
 int target_width, target_height;
 int target_x_offset = 0, target_y_offset = 0;
@@ -55,9 +55,9 @@ int Reduction_V = 2;
 #define PAD_WIDTH2 3
 #define PAD_WIDTH3 5
 
-Window Root;
-int screen;
-int d_depth;
+extern Window Root;
+extern int screen;
+extern int d_depth;
 
 Window main_win,holder_win;
 Pixel back_pix, fore_pix, hilite_pix,shadow_pix;
